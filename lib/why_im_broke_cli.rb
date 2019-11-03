@@ -1,6 +1,8 @@
-require "why_im_broke_cli/version"
+require "nokogiri"
+require "pry"
+require "open-uri"
 
-module WhyImBrokeCli
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./why_im_broke_cli/version"
+require_relative "./why_im_broke_cli/cli"
+require_relative "./why_im_broke_cli/item"
+require_relative "./why_im_broke_cli/scraper"
